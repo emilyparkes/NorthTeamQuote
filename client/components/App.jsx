@@ -6,7 +6,7 @@ import Home from './Home'
 const App = () => {
   return (
     <Router>
-      <div className='app'>
+      <div>
         <Route path='/' component={Home} />
       </div>
     </Router>

@@ -26,14 +26,16 @@ class Home extends React.Component {
     console.log(this.state)
     return (
       <div className='container'>
-        {data.person.map((person) => {
-          return (
-            <div key={person.id}>
-              <EachPerson person={person} handleClick={this.handleClick}/>
-            </div>
-          )
-        })}
-        {this.state.showQuote && <Quote quote={this.state.quote}/>}
+        <div className='main'>
+          {data.person.map((person) => {
+            return (
+              <div key={person.id}>
+                <EachPerson person={person} handleClick={this.handleClick} />
+              </div>
+            )
+          })}
+        </div>
+        {this.state.showQuote && <Quote quote={this.state.quote} />}
       </div>
     )
   }
