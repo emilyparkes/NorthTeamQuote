@@ -15,7 +15,6 @@ const tianImg = '/profiles/png/tian.png'
 const timImg = '/profiles/png/tim.png'
 const tylerImg = '/profiles/png/tyler.png'
 
-
 const data = {
   person: [
     {
@@ -113,13 +112,6 @@ const data = {
       name: 'Tyler',
       quote: 'Success is paddling from wipeout to wipeout with no loss of enthusiasm. Shakka bra!',
       image: tylerImg
-    },
-
-
-
-
-
-
     }
   ]
 }
