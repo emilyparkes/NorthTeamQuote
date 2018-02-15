@@ -9,7 +9,8 @@ class Quote extends React.Component {
   render () {
     return (
       <div className='quote-container'>
-        <p>{this.props.person.quote}</p>
+        <p>{this.props.quote}</p>
+
       </div>
     )
   }
