@@ -1,4 +1,5 @@
 import React from 'react'
+import Modal from 'react-responsive-modal'
 
 import data from '../../data.js'
 import EachPerson from './EachPerson'
@@ -9,21 +10,27 @@ class Home extends React.Component {
     super(props)
     this.state = {
       showQuote: false,
-      quote: ' '
+      quote: ' ',
+      open: false
     }
     this.handleClick = this.handleClick.bind(this)
+  }
+
+  onCloseModal () {
+    this.setState({ open: false })
   }
 
   handleClick (isShowing, quote) {
     // console.log(isShowing, quote)
     this.setState({
       showQuote: isShowing,
-      quote: quote
+      quote: quote,
+      open: true
     })
   }
 
   render () {
-    console.log(this.state)
+    const { open } = this.state
     return (
       <div className='container'>
         <div className='main'>
@@ -35,7 +42,9 @@ class Home extends React.Component {
             )
           })}
         </div>
-        {this.state.showQuote && <Quote quote={this.state.quote} />}
+        <Modal open={open} onClose={this.onCloseModal} little>
+          {this.state.showQuote && <Quote quote={this.state.quote} />}
+        </Modal>
       </div>
     )
   }
