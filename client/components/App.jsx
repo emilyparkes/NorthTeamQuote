@@ -1,15 +1,18 @@
 import React from 'react'
+import { HashRouter as Router, Route } from 'react-router-dom'
 
-import ErrorMessage from './ErrorMessage'
-import WaitIndicator from './WaitIndicator'
 import Home from './Home'
+import Quote from './Quote'
 
-const App = () => (
-  <div className='app'>
-    <ErrorMessage />
-    <WaitIndicator />
-    <Home />
-  </div>
-)
+const App = () => {
+  return (
+    <Router>
+      <div className='app'>
+        <Route path='/' component={Home} />
+        <Router path='/:id' component={Quote} />
+      </div>
+    </Router>
+  )
+}
 
 export default App
