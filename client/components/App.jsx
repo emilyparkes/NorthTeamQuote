@@ -1,19 +1,19 @@
 import React from 'react'
+import { HashRouter as Router, Route } from 'react-router-dom'
 
-import ErrorMessage from './ErrorMessage'
-import WaitIndicator from './WaitIndicator'
 import Home from './Home'
+import Quote from './Quote'
 import data from '../../data.js'
 
 const App = () => {
-  console.log(data)
   return (
-    <div className='app'>
-      <ErrorMessage />
-      <WaitIndicator />
-      <Home />
-      <img alt='adam' src={data.person[0].image}/>
-    </div>
+    <Router>
+      <div className='app'>
+        <Route path='/' component={Home} />
+        <Router path='/:id' component={Quote} />
+        <img alt='adam' src={data.person[0].image}/>
+      </div>
+    </Router>
   )
 }
 
