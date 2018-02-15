@@ -1,4 +1,4 @@
-import request from 'superagent'
+// import request from 'superagent'
 
 export const SHOW_ERROR = 'SHOW_ERROR'
 export const RECEIVE_POSTS = 'RECEIVE_POSTS'
@@ -24,16 +24,16 @@ export const showError = (errorMessage) => {
   }
 }
 
-export function fetchPosts (subreddit) {
-  return (dispatch) => {
-    dispatch(requestPosts())
-    return request
-      .get(`/api/v1/reddit/subreddit/${subreddit}`)
-      .then(res => {
-        dispatch(receivePosts(res.body))
-      })
-      .catch(err => {
-        dispatch(showError(err.message))
-      })
-  }
-}
+// export function fetchPosts (subreddit) {
+//   return (dispatch) => {
+//     dispatch(requestPosts())
+//     return request
+//       .get(`/api/v1/reddit/subreddit/${subreddit}`)
+//       .then(res => {
+//         dispatch(receivePosts(res.body))
+//       })
+//       .catch(err => {
+//         dispatch(showError(err.message))
+//       })
+//   }
+// }
