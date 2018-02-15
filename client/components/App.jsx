@@ -2,13 +2,13 @@ import React from 'react'
 
 import ErrorMessage from './ErrorMessage'
 import WaitIndicator from './WaitIndicator'
-import Post from './Post'
+import Home from './Home'
 
 const App = () => (
   <div className='app'>
     <ErrorMessage />
     <WaitIndicator />
-    <Post />
+    <Home />
   </div>
 )
 
