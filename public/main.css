@@ -1,8 +1,7 @@
-
-
 body {
   display: flex;
   flex-direction: column;
+  background-image: url('background.jpg')
 }
 .container {
   width: 100%;
