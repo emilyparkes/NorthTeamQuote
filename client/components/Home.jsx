@@ -12,21 +12,24 @@ class Home extends React.Component {
     this.state = {
       showQuote: false,
       quote: ' ',
-      open: false
+      open: false,
+      name: ' '
     }
     this.handleClick = this.handleClick.bind(this)
+    this.onCloseModal = this.onCloseModal.bind(this)
   }
 
   onCloseModal () {
     this.setState({ open: false })
   }
 
-  handleClick (isShowing, quote) {
+  handleClick (isShowing, quote, name) {
     // console.log(isShowing, quote)
     this.setState({
       showQuote: isShowing,
       quote: quote,
-      open: true
+      open: true,
+      name: name
     })
   }
 
@@ -42,12 +45,16 @@ class Home extends React.Component {
                 <EachPerson person={person} handleClick={this.handleClick} />
               </div>
             )
-          })}
+          })
+          }
         </div>
         <Modal open={open} onClose={this.onCloseModal} little>
-          {this.state.showQuote && <Quote quote={this.state.quote} />}
+          <div>
+            {this.state.showQuote && <Quote name={this.state.name} quote={this.state.quote} />}
+          </div>
         </Modal>
       </div>
+
     )
   }
 }

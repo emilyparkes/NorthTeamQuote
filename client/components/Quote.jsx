@@ -7,9 +7,11 @@ class Quote extends React.Component {
     }
   }
   render () {
+    console.log(this.props.name)
     return (
       <div className='quote-container'>
-        <p>{this.props.quote}</p>
+        <h3>{this.props.name}</h3>
+        <p>&quot;{this.props.quote}&quot;</p>
 
       </div>
     )
@@ -17,4 +19,3 @@ class Quote extends React.Component {
 }
 
 export default Quote
-
