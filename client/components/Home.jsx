@@ -1,7 +1,6 @@
 import React from 'react'
 import Modal from 'react-responsive-modal'
 
-
 import data from '../../data.js'
 import EachPerson from './EachPerson'
 import Quote from './Quote'
@@ -49,7 +48,7 @@ class Home extends React.Component {
           })
           }
         </div>
-        <Modal open={open} onClose={this.onCloseModal} little>
+        <Modal className='modal' open={open} onClose={this.onCloseModal} little>
           <div>
             {this.state.showQuote && <Quote name={this.state.name} quote={this.state.quote} />}
           </div>

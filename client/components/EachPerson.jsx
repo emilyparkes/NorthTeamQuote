@@ -12,7 +12,7 @@ class EachPerson extends React.Component {
 
   render () {
     return (
-      <div className='person-box'>
+      <div className='person-box zoom'>
         <img className='person-image' onClick={this.callsHandleClick} src={this.props.person.image} />
         <h3 className='person-name'>{this.props.person.name}</h3>
       </div>
