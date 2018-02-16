@@ -48,7 +48,7 @@ class Home extends React.Component {
           })
           }
         </div>
-        <Modal open={open} onClose={this.onCloseModal} little>
+        <Modal className='modal' open={open} onClose={this.onCloseModal} little>
           <div>
             {this.state.showQuote && <Quote name={this.state.name} quote={this.state.quote} />}
           </div>
