@@ -4,6 +4,7 @@ import Modal from 'react-responsive-modal'
 import data from '../../data.js'
 import EachPerson from './EachPerson'
 import Quote from './Quote'
+import Header from './Header'
 
 class Home extends React.Component {
   constructor (props) {
@@ -33,6 +34,7 @@ class Home extends React.Component {
     const { open } = this.state
     return (
       <div className='container'>
+        <Header />
         <div className='main'>
           {data.person.map((person) => {
             return (
