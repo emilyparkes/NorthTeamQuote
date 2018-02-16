@@ -26,7 +26,7 @@ const data = {
     {
       id: 2,
       name: 'Belma',
-      quote: 'The biggest wall you have to climb is the one you build in your mind: Never let your mind talk you out of your dreams, trick you into giving up. Never let your mind become the greatest obstacle to success. To get your mind on the right track, the rest will follow.',
+      quote: 'Whats done is done. Whats gone is gone. One of lifes lessons is always moving on. Its okay to think about Adams squat from time to time, but keep moving forward.',
       image: belmaImg
     },
     {
