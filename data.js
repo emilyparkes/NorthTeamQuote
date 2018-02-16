@@ -38,7 +38,7 @@ const data = {
     {
       id: 4,
       name: 'Elyse',
-      quote: 'Be brave to stand for what you believe in, being able to reheat coffee in the microwave, even if you stand alone.',
+      quote: 'Be brave to stand for what you believe in, reheating coffee in the microwave, even if you stand alone.',
       image: elyseImg
     },
     {
