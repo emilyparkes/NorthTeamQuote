@@ -7,7 +7,7 @@ class EachPerson extends React.Component {
   }
 
   callsHandleClick () {
-    this.props.handleClick(true, this.props.person.quote)
+    this.props.handleClick(true, this.props.person.quote, this.props.person.name)
   }
 
   render () {
