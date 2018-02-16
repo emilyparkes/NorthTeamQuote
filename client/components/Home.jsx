@@ -1,6 +1,7 @@
 import React from 'react'
 import Modal from 'react-responsive-modal'
 
+
 import data from '../../data.js'
 import EachPerson from './EachPerson'
 import Quote from './Quote'

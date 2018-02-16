@@ -1,11 +1,14 @@
 body {
   display: flex;
   flex-direction: column;
-  background-image: url('background.jpg')
+  background-image: url('dark-background.jpg')
 }
 .container {
   width: 100%;
   height: 100%;
+  justify-content: center;
+  align-content: center;
+
 }
 
 
@@ -13,6 +16,8 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
 
 .person-box {
@@ -31,24 +36,32 @@ body {
 
 .person-name{
   font-family: 'Kavivanar', cursive;
-  color: rgb(236, 106, 106);
-  /* text-shadow: 3px 3px 9px rgb(68, 60, 60); */
+  color: rgb(250, 240, 240);
+  text-shadow: 3px 3px 9px rgb(34, 32, 32);
 }
 
 .header {
   font-family: 'Kavivanar', cursive;
   align-content: center;
+  color: rgba(255, 254, 254, 0.925);
 }
 
 .title {
   text-align: center;
-   color: rgba(253, 185, 176, 0.925);
+   color: rgba(247, 182, 173, 0.925);
    font-size: 24px;
+   text-shadow: 1px 1px 3px rgb(85, 84, 84);
 }
 
 .sub-header {
   text-align: center;
-  color: rgba(253, 185, 176, 0.925);
+  color: rgba(247, 182, 173, 0.925);
   font-family: 'Nunito', sans-serif;
   font-size: 18px;
+}
+
+.quote-container {
+  color: rgba(0, 0, 0, 0.925);
+  font-family: 'Nunito', sans-serif;
+  font-size: 26px;
 }
