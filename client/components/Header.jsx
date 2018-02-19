@@ -1,6 +1,19 @@
 import React from 'react'
+import request from 'superagent'
 
-const Header = () => {
+import Register from './Register'
+
+class Header extends React.Component {
+  constructor () {
+    super ()
+    this.state = {
+     
+    }
+    
+    
+  }
+
+     render() {
   return (
     <div className="header">
       <div className="title">
@@ -9,8 +22,10 @@ const Header = () => {
       <div className="sub-header">
         <h2>Motivate yourself when things get tough <br /> <i>— with harakeke inspirational quotes!</i></h2>
       </div>
+      <Register />   
     </div>
   )
+}
 }
 
 export default Header
